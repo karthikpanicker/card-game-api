@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Grandmas Card Game</title>
+</head>
+<body>
+<p>Hello, {{ current_user.name }}! You're logged in! Email: {{ current_user.email }}</p>
+<div>
+    <p>Google Profile Picture:</p>
+    <img src="{{ current_user.profile_pic }}" alt="Google profile pic"></img>
+</div>
+<a class="button" href="/auth/logout">Logout</a>
+</body>
+</html>
